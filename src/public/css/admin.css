@@ -1,0 +1,66 @@
+.admin__content {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.admin__heading {
+    margin: 80px;
+}
+
+.admin-form {
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.admin-form__group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.export-and-page__group {
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.admin-table__group {
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+    padding-bottom: 20px;
+}
+
+.admmin-table__header {
+    text-align: left;
+    width: 300px;
+    height: 70px;
+    color: #FFFFFF;
+    background: #BAA899;
+}
+
+.admin-table__header-inner {
+    padding-left: 40px;
+}
+
+.admmin-table__data {
+    text-align: left;
+    width: 300px;
+    height: 70px;
+    color: #8B7969;
+    background: #FFFFFF;
+}
+
+.admin-table__data-inner {
+    padding-left: 40px;
+}
+
+svg.w-5.h-5 {
+    /*paginateメソッドの矢印の大きさ調整のために追加*/
+    width: 30px;
+    height: 30px;
+  }

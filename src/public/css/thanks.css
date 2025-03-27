@@ -1,0 +1,45 @@
+.thanks__content {
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+.thanks__background {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    font-size: 18vw;
+    color: rgba(139, 121, 105, 0.05);
+}
+
+.thnaks__message {
+    position: absolute;
+    top: 45%;
+    right: 0;
+    left: 0;
+    font-size: 2vw;
+    color: #8B7969;
+}
+
+.thanks__link {
+    position: absolute;
+    top: 55%;
+    right: 0;
+    left: 0;
+    font-size: 2vw;
+    color: black;
+}
+
+.thanks__link > button {
+    border: none;
+    width: 140px;
+    height: 46px;
+    background-color: #82756A;
+}
+
+.thanks__link a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
