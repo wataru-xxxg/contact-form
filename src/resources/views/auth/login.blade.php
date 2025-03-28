@@ -28,12 +28,12 @@
                 <!-- /.login-form__input--text -->
             </div>
             <!-- /.login-form__group-content -->
+            @error('email')
             <div class="login-form__error">
-                @error('email')
                 {{ $message }}
-                @enderror
             </div>
             <!-- /.login-form__error -->
+            @enderror
             <div class="login-form__group-title">
                 <span class="login-form__label--text">パスワード</span>
             </div>
@@ -45,12 +45,12 @@
                 <!-- /.login-form__input--text -->
             </div>
             <!-- /.login-form__group-content -->
+            @error('password')
             <div class="login-form__error">
-                @error('password')
                 {{ $message }}
-                @enderror
             </div>
             <!-- /.login-form__error -->
+            @enderror
             <div class="login-form__group-button">
                 <button class="login-form__group-button-submit">ログイン</button>
             </div>

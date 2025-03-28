@@ -22,6 +22,7 @@ Route::post('/confirm', [ContactController::class, 'confirm']);
 Route::post('/thanks', [ContactController::class, 'thanks']);
 Route::middleware('auth')->group(function () {
     Route::get('/admin', [AuthController::class, 'admin']);
+    Route::post('/delete', [AuthController::class, 'delete']);
+    Route::get('/export', [AuthController::class, 'export']);
 });
 Route::post('/admin', [AuthController::class, 'search']);
-Route::get('/modal', [ModalController::class, 'modal']);

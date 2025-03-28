@@ -28,12 +28,12 @@
                 <!-- /.register-form__input--text -->
             </div>
             <!-- /.register-form__group-content -->
+            @error('name')
             <div class="register-form__error">
-                @error('name')
                 {{ $message }}
-                @enderror
             </div>
             <!-- /.register-form__error -->
+            @enderror
             <div class="register-form__group-title">
                 <span class="register-form__label--text">メールアドレス</span>
             </div>
@@ -45,12 +45,12 @@
                 <!-- /.register-form__input--text -->
             </div>
             <!-- /.register-form__group-content -->
+            @error('email')
             <div class="register-form__error">
-                @error('email')
                 {{ $message }}
-                @enderror
             </div>
             <!-- /.register-form__error -->
+            @enderror
             <div class="register-form__group-title">
                 <span class="register-form__label--text">パスワード</span>
             </div>
@@ -62,12 +62,12 @@
                 <!-- /.register-form__input--text -->
             </div>
             <!-- /.register-form__group-content -->
+            @error('password')
             <div class="register-form__error">
-                @error('password')
                 {{ $message }}
-                @enderror
             </div>
             <!-- /.register-form__error -->
+            @enderror
             <div class="register-form__group-button">
                 <button class="register-form__group-button-submit">登録</button>
             </div>

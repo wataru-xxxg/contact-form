@@ -16,7 +16,57 @@
 .admin-form__group {
     display: flex;
     justify-content: space-between;
+    height: 50px;
     margin-bottom: 30px;
+}
+
+.admin-form__input--text {
+  height: 100%;
+}
+
+.admin-form__input--text > input {
+  width: 280px;
+  height: 100%;
+  color: #BEB1A6;
+  background: #FBFBFB;
+  border: 1px solid #E3DED9
+}
+
+.admin-form__select {
+  height: 100%;
+  color: #8B7969;
+  background: #F4F4F4;
+  border: 1px solid #E3DED9
+}
+
+.admin-form__select > select {
+  height: 100%;
+  color: #8B7969;
+  background: #F4F4F4;
+  border: 1px solid #E3DED9
+}
+
+.admin-form__select > input {
+  height: 100%;
+  color: #8B7969;
+  background: #F4F4F4;
+  border: 1px solid #E3DED9
+}
+
+.admin-form__button-search > button {
+  width: 100px;
+  height: 100%;
+  color: #FFFFFF;
+  background: #82756A;
+  border: 1px solid #8B7969
+}
+
+.admin-form__button-reset > input {
+  width: 100px;
+  height: 100%;
+  color: #FFFFFF;
+  background: #D9C6B5;
+  border: 1px solid #D9C6B5
 }
 
 .export-and-page__group {
@@ -26,6 +76,12 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
+}
+
+.export-and-page__group-button-submit {
+  color: #8B7969;
+  background: #E1DBD699;
+  border: 1px solid #D9C6B5
 }
 
 .admin-table__group {
@@ -50,7 +106,7 @@
 .admmin-table__data {
     text-align: left;
     width: 300px;
-    height: 70px;
+    height: 50px;
     color: #8B7969;
     background: #FFFFFF;
 }
@@ -59,8 +115,221 @@
     padding-left: 40px;
 }
 
+.detail-table {
+  margin-bottom: 50px;
+}
+
+.detail-table__header {
+    text-align: left;
+    width: 300px;
+    height: 50px;
+    color: #BAA899;
+}
+
+.detail-table__header-inner {
+    padding-left: 40px;
+}
+
+.detail-table__input--text {
+    display: flex;
+}
+
+.detail-table__input--text > input {
+    border: none;
+    padding-left: 40px;
+    color: #8B7969;
+}
+
+.detail-table__input--text-gender {
+    border: none;
+    color: #8B7969;
+}
+
+.detail-table__input--text-category {
+    border: none;
+    padding-left: 40px;
+    color: #8B7969;
+}
+
+.detail-table__input--text-name {
+    display: flex;
+}
+
+.detail-table__input--text-name > input {
+    width: 100px;
+    border: none;
+    padding-left: 40px;
+    color: #8B7969;
+}
+
+.detail-form {
+  text-align: center;
+}
+
+.detail-form__button {
+  width: 80px;
+  height: 40px;
+  color: #FFFFFF;
+  background: #BA370D;
+}
+
 svg.w-5.h-5 {
     /*paginateメソッドの矢印の大きさ調整のために追加*/
     width: 30px;
     height: 30px;
   }
+
+.button-modal {
+  background: #F4F4F44D;
+  border: 1px solid #D9C6B599;
+  font-size: 16px;
+  line-height: 1.6;
+  display: block;
+  padding: 8px 20px;
+  color: #D9C6B5;
+  text-align: center;
+  cursor: pointer;
+  margin: 0;
+  margin-left: 60px;
+}
+
+/* グレー背景 */
+layer {
+  background: rgba(0, 0, 0, .2); /* 背景を薄くする *
+  width: 100%;
+  height: 100%;
+  position: fixed; /* 画面に固定するために指定 */
+  top: 0;
+  left: 0;
+}
+
+/* モーダルコンテンツ */
+.modal {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  min-width: 440px;
+}
+
+.modal__inner {
+  margin-top: 125px;
+  margin-bottom: 125px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);/* モーダルにシャドウをかける */
+  border-radius: 13px; /* モーダルの角を丸める */
+  display: block;
+  padding: 21px 8px 21px;
+  height: auto;
+}
+
+.modal__content {
+  padding-top: 15px;
+  padding-bottom: 23px;
+}
+
+.modal__button-wrap {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: inline-flex;
+}
+
+.close-button {
+  position: relative;
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  padding: 0;
+  background: #FFFFFF;
+  border: 1px solid #8B7969;
+  cursor: pointer;
+}
+
+.close-button span {
+  width: 25px;
+  height: 2px;
+  background: #8B7969;
+  display: inline-block;
+  position: absolute;
+  left: calc(50% - 12px);
+  top: 50%;
+  border-radius: 20px;
+}
+
+.close-button span:nth-child(1) {
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.close-button span:nth-child(2) {
+  transform: rotate(-45deg) translate(1px, -1px);
+}
+
+.layer {
+  background: rgba(0, 0, 0, .2);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /* 追記 */
+  z-index: -1; 
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  min-width: 440px;
+
+  /* 追記 */
+  opacity: 0;
+  visibility: hidden;
+}
+
+.layer.is-open {
+  z-index: 999;
+  opacity: 1;
+  visibility: visible;
+}
+
+.layer.is-open .modal{
+  opacity: 1;
+  visibility: visible;
+}
+
+.pagination {
+    margin: 0; /*余白をリセット*/
+ padding: 0; /*余白をリセット*/
+ list-style-type: none; /*マーカーを削除*/
+ display: flex; /*レイアウト指定*/
+ border-left: solid 1px #3dbfb8; /*枠線・左*/
+}
+
+.pagination > li {
+ padding: 5px 10px; /*余白*/
+ background: #ffffff; /*背景色*/
+ border-top: solid 1px #3dbfb8; /*枠線・上*/
+ border-bottom: solid 1px #3dbfb8; /*枠線・下*/
+ border-right: solid 1px #3dbfb8; /*枠線・右*/
+}
+
+.pagination a {
+  text-decoration: none;
+}
+
+.page-item > a {
+  color: #8B7969;
+}
+
+.page-item.active {
+  color: #FFFFFF;
+  background: #8B7969;
+}
